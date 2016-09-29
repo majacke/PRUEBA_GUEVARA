@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block titulo %}Contactanos{% endblock %}
+{% block encabezado %} 
+	<h1><center>COMUNICATE CON NOSOTROS <p>&nbsp;</p> </center></h1>
+	<a href="http://edomex.gob.mx/"><img src="../static/img/logoedomex.png"  align= "left" width="200" height="200"></a>
+	<a href="http://edomexinforma.com/"><img src="../static/img/eldomexinfo.png"  align="right" width="200" height="100"></a>
+{% endblock %}
+{% block contenido %}
+<p>&nbsp;</p>
+	   
+	<CENTER><form id='formulario' method='post' action=''>{% csrf_token %}
+	{{formulario.as_p}}
+	<p><input type='submit' value='Confirmar'/></p>
+	</form></CENTER>
+{% endblock %}

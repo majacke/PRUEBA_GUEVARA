@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block titulo %} NOTICIAS REGRISTRADAS {% endblock %}
+
+{% block css %}
+  <style>
+	img { width:100px; }
+  </style>
+{% endblock %}
+
+{% block encabezado %}
+ <h1><center>NUESTRAS NOTICIAS<p>&nbsp;</p> </center></h1>
+  <a href="http://edomex.gob.mx/"><img src="../static/img/logoedomex.png"  align= "left" width="200" height="200"></a>
+	<a href="http://edomexinforma.com/"><img src="../static/img/eldomexinfo.png"  align="right" width="200" height="100"></a>
+{% endblock %}
+
+{% block contenido %}
+<p>&nbsp;</p> <p>&nbsp;</p> <CENTER>
+<center><a href="/receta/nueva">AGREGA UNA NOTICIA</a><p></p></center>
+<ul>
+	{% for dato in datos %}
+	<li>
+		<img src='{{MEDIA_URL}}{{dato.imagen}}'><p>
+		<a href='{% url principal.views.detalle_receta dato.id %}'>{{dato.titulo}}</a><p>
+		
+	</li>
+	{% empty %}
+	<li>AUN NO HAY NOTICIAS REGISTRADAS</li>
+	{% endfor %}
+</ul></CENTER>
+{% endblock %}

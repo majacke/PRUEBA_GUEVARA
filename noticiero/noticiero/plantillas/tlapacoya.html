@@ -1,0 +1,203 @@
+{% extends 'base.html' %}
+
+{% comment %} Aqui van comentarios {% endcomment %}
+
+{% block titulo %} Inicio {% endblock %}
+
+{% block encabezado %} 
+
+	<h1><center> TLAPACOYA<p>&nbsp;</p> </center></h1>
+	<a href="http://edomex.gob.mx/"><img src="../static/img/logoedomex.png"  align= "left" width="200" height="200"></a>
+	<a href="http://edomexinforma.com/"><img src="../static/img/eldomexinfo.png"  align="right" width="200" height="100"></a>
+{% endblock %}
+{% block contenido %}
+  <p><CENTER>
+      <p>&nbsp;</p>
+	    <p>&nbsp;</p>
+	    <p>&nbsp;</p>
+	     <p>&nbsp;</p>
+	   
+	  	
+	  Actualmente tenemos registradas: 
+     {% with total=recetas.count %} 
+		{{total}} NOTICIAS{{total|pluralize}}
+	 {% endwith %}
+  </p></CENTER>
+  <CENTER>
+	<ul>		
+	  {% for dato in recetas %}
+	  <li class="{% cycle 'impar' 'par' %}">{{dato.titulo|title}}</li>
+	  {% empty %}
+	  <li> No hay noticias registradas aún </li>
+	  {% endfor %}
+	</ul></CENTER>
+	<P>
+	<p><em>
+
+<p>Tlapacoya: “Lugar donde se lava”.
+	
+<p>Es un sitio arqueológico que tiene una de las ocupaciones más tempranas en México. Durante el arqueolítico, alrededor del 34,000 al 22,00 a.C., el sitio se caracterizaba por tener áreas de pastizales, clima frío y por la fauna pleistocénica. Entre el 22,000 al 13,000 a.C. el sitio estuvo habitado en varias ocasiones por pequeños grupos de cazadores-recolectores-pescadores, durante este tiempo el clima en Tlapacoya comienza a volverse un poco cálido y para el 13,000 a.C., particularmente en esta zona se evidencia que la fauna pleistocénica comienza a extinguirse.
+ 
+<p>En Tlapacoya se halló un cráneo fechado alrededor del 8,000 a.C. siendo de los más tempranos en la Cuenca de México.
+<p>Los grupos humanos que se establecieron entre el 5,500 al 3,500 a.C. eran poco numerosos y continuaron basando su economía en la apropiación directa de recursos que el medio les proporcionaba.
+
+<p>Entre el 3,500 y 2,500 a.C. se tiene un lapso de desocupación, debido a erupciones volcánicas que provocaron migraciones hacia mejores lugares.
+
+<p>Las inmediaciones del actual cerro de Tlapacoya, en época Pleistocénica fue una isla dentro de un lago de Chalco, la cual tiene una relevancia capital en la historia de la investigación paleoclimática y prehistórica de la cuenca de México y de la investigación sobre la edad del primer poblamiento de América. El departamento de prehistoria del INAH realizó aquí grandes excavaciones en las cuales se detectaron presencia humana al menos desde hace 24 mil años.
+ 
+<p>Indagaron ahí “la interrelación hombre-ambiente dentro del aspecto cronológico”. Con las mejores técnicas se estableció la cronología de la etapa lítica, la génesis geológica de la cuenca de México, la correlación de las glaciaciones de las altas montañas del centro de México.
+ 
+<p>Los estudios paleoclimáticos revelaron la variación climática de los últimos 35 mil años en la cuenca del lago de Chalco. 
+ 
+<p>Los estudios de los restos de fauna pleistocénica de las excavaciones revelaron la presencia de restos de una fauna que se extinguió hace 9 mil año. La mega fauna que deambuló en la orilla lacustre comprendió mamuts, mastodontes, caballos corpulentos, camellos, bisontes, osos, venados de gran talla, así como caprichos, perezosos, antílopes, coyotes, berrendos y vampiros. El lago recibía cormoranes, flamencos y zambullidores.
+ 
+<p>La vida en Tlapacoya antiguamente
+<p>El llamado mundo aldeano denota las primeras aldeas con conocimiento acerca de la agricultura y la cerámica., así como la subsistencia con base en el cultivo del maíz.
+<p>Un sitio vecino del actual sitio de Tlapacoya ha sido estudiado en su larga evolución desde el 2500 a.C. hasta el 1250 a.C. Conocido como Zohapilco.
+ 
+<p>Tlapacoya al igual que Zohapilco comparten la llamada fase Ayotla (1220-800 a.C), importante etapa en que los sitios arqueológico recibieron la influencia estilística olmeca, caracterizada por representaciones del jaguar, sus  colmillos, garras, manchas, mandíbulas y ojo, y combinaciones míticas como el hombre -jaguar.
+<p>Las figurillas de arcilla representan actividades de la vida diaria de las aldeas, de personajes como chamanes, bailarines, jugadores de pelota, seres deformes, ancianos, acróbatas y músicos.
+ 
+<p>Los patrones estéticos de adorno corporal influyen escarificación, deformación craneana, mutilación dentaria y rapada de cabeza. A Tlapacoya llegaban objetos trabajados en jadeíta. Tlapacoya y Tlatilco ejercen el poder económico y  político en el altiplano central.
+
+<p>La parte tardía del horizonte formativo va del año 800 a.C. al año 200 a.C. Hacia el 700 a.C. aparecen los primeros centros ceremoniales en Cerro Tepalcate, Tlapacoya y Cuicuilco. Tlapacoya destaca por el uso temprano de los pisos estucados. En esa época se dan rápidos desarrollos en la cuenca de México que conducirán al surgimiento del urbanismo y la civilización.
+ 
+<p>La pirámide de Tlapacoya
+<p>Esta estructura representa uno de los primeros ensayos arquitectónicos que preceden al estilo arquitectónico que preceden al estilo arquitectónico de Teotihuacan. El basamento de muros inclinados de cinco metros de altura paso por tres etapas de construcción. En  su interior se encontraron tumbas de piedra con techo de laja basáltica. En los entierros había suntuosas ofrendas de jade, cuchillos de obsidiana, vasijas pintadas al fresco, botellones preTláloc.
+ 
+<p>Los restos arqueológicos de Tlapacoya indican un gran adelanto tecnológico, división del trabajo, clases sociales, actividades rituales a Huehueteoltl y Tláloc.
+ 
+<p>Esta comienza a desarrollarse alrededor del 1100 a.C. Durante este lapso de tiempo hay cierta influencia de tiempo grupos olmecas reflejada en la cerámica del sitio. La subsistencia de estos hombres se basaba en los cultivos de maíz y su organización era aldeana.
+
+<p>Tlapacoya tiene su mayor auge en el 400 a.C. se transforma en un centro regional que dependen varias aldeas y poblaciones dispersas alrededor.
+ 
+<p>El comercio tenia gran importancia en Tlapacoya ya que era un centro consumidor de artículos de lujo. Tuvo contacto con el occidente de México, Monte Albán y Kaminaljuyú.
+ 
+<p>La sociedad de Tlapacoya tenía tres estratos sociales: 1) Los sacerdotes; 2) Los servidores de los sacerdotes y artesanos especializados dedicados a la cerámica, lapidaria, curtiduría, albañilería, cantería, cestería, textiles, entre otros; y por último 3) Los campesinos que se dedicaban a la agricultura, caza, pesca y recolección.
+ 
+<p>En el Formativo Terminal o Protoclásico, Tlapacoya comienza a declinar ante la importancia de Teotihuacán. La mayor parte de la población emigra al norte donde se encuentra Teotihuacán. Ya que este gran centro  regional parece retomar ciertos elementos culturales que son característicos de Tlapacoya, en especial cerámicos y arquitectura.
+ 
+<p>Zohapilco
+<p>El sitio arqueológico también es conocido como Tlapacoya-Zohapilco, y su importancia se debe a la evidencia arqueológica del cultivo temprano de plantas durante el Protoneolítico.
+ 
+<p>Entre el 5,500 y 3,500 a.C. Zohapilco contaba con bosques y predominaba un clima templado. Entre los animales de la región figuraban el venado, el conejo, el perro o coyote, ratón de campo, aves acuáticas, tortugas, anfibios comestibles como el ajolote y una gran cantidad de peces.
+ 
+<p>El cultivo de amarantáceas, quenopodiáceas y del zea, era obtenido a través de una actividad hortícola que complementaban la dieta de estos grupos humanos.
+ 
+<p>La rica, variada y segura obtención de recursos naturales, permitía un modo de vida en agrupamientos estables mucho antes de la existencia de una agricultura realmente rentable.
+ 
+<p>Entre los 3,500 y 2,500 a.C. hay una o varias erupciones volcánicas en la Cuenca de México, que determinan ligeros cambios climáticos, un empobrecimiento de la flora y disminución de los mamíferos; y a su vez un periodo de desocupación.
+ 
+<p>Formativo
+<p>El sitio volvió a ser ocupado para el formativo temprano. La alimentación de estos grupos humanos se basaba en los consumos de calabaza, chayote, quenopodiáceos, amarantáceas y maíz. Además de cérvidos, pato, pescado blanco, tortugas y anfibios, que se sumaban a su dieta.
+ 
+<p>En Zohapilco se halló una figurilla antropomorfa en barro cocido fechada para el 2,300 a.C., siendo la figurilla más antigua en Mesoamérica.
+ 
+<p>Del 2,000 al 1,400 a.C. el sitio fue abandonado para volver a ser re ocupado en el formativo temprano, entre 1400 y 1250 a.C. Esta nueva gente que habitó Zohapilco, tuvo una vida aldeana con una economía de subsistencia agrícola.
+ 
+<p>A partir del formativo Medio el cultivo de maíz adquiere mayor importancia para la vida de las comunidades y a partir del 1000 a.C. comienza el auge de su producción. Zohapilco tiene contacto con otras regiones como Oaxaca, Puebla y con el Golfo de México (Olmecas).
+  
+<p>A principios del Formativo Tardío el sitio de Zohapilco tiene una ocupación muy densa. Y a finales del Formativo Tardío y principios del Terminal, el sitio forma parte del asentamiento de Tlapacoya, siendo una ocupación periférica.
+
+<p>¿Como llegar a Tlapacoya?
+<p>Se llega a través de la carretera Federal México-Puebla a la altura de Tlapacoya y por la autopista México-Puebla por el puente Tlapacoya siguiendo la señalización.
+		
+
+	</em>/p>
+
+		<img src=../static/img/tlapacoya.png wisth= 200 height=180 border=0>
+
+        <center><table border="2px" >
+            <caption><p><center><span style="font-size:25px;"><strong>LOS CAMPEONES SON:</strong></span></center></p></caption>
+            <tr>
+            	<td><div> 1 </div>
+            		<div> 2 </div>
+            		<div> 3 </div>
+            		<div> 4 </div>
+            		<div> 5 </div>
+            		<div> 6 </div>
+            		<div> 7 </div>
+            		<div> 8 </div>
+            		<div> 9 </div>
+            		<div> 10 </div>
+            		<div> 11 </div>
+            		<div> 12 </div>
+            			
+            	</td>
+                <td colspan="2"><div><a href="http://www.conmebol.com/es/copa-america-2015/historia"> 1916/17 Uruguay</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1919 Brasil</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1920 Uruguay</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1921 Argentina</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1922 Brasil</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1923/24 Uruguay</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1925 Argentina</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1926 Uruguay</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1927/29 Argentina</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1935 Uruguay</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1937 Argentina</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1939 Perú</a></div>
+
+            	<td><div> 13 </div>
+            		<div> 14 </div>
+            		<div> 15 </div>
+            		<div> 16 </div>
+            		<div> 17 </div>
+            		<div> 18 </div>
+            		<div> 19 </div>
+            		<div> 20 </div>
+            		<div> 21 </div>
+            		<div> 22 </div>
+            		<div> 23 </div>
+            		<div> 24 </div>
+            			
+            	</td>
+</td>
+                <td><div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1941 Argentina</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1942 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1945/46/47 Argentina</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1949 Brasil</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1953 Paraguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1955 Argentina</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1956 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1957/59 Argentina</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1963 Bolivia</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1967 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1975 Perú</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1979 Paraguay</a></div>
+				<td><div> 25 </div>
+            		<div> 26 </div>
+            		<div> 27 </div>
+            		<div> 28 </div>
+            		<div> 29 </div>
+            		<div> 30 </div>
+            		<div> 31 </div>
+            		<div> 32 </div>
+            		<div> 33 </div>
+            		<div> 34 </div>
+            		<div> 35 </div>
+            		<div> 36 </div>
+            			
+            	</td>
+</td>
+                <td><div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1983/87 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1989 Brasil</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1991/93 Argentina</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1995 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1997 Brasil</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1999 Brasil</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">2001 Colombia</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">2004/07 Brasil</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">2011 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">2015 Chile</a></div>
+					<div><a href="http://www.conmebol.com/copa-america-centenario">?</a></div>
+					<div><a>     .</a></div>
+					</div>
+</td>
+            </tr>
+         
+        </table></center>
+
+
+  
+
+{% endblock %}

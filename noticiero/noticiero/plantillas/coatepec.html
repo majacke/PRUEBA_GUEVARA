@@ -1,0 +1,184 @@
+{% extends 'base.html' %}
+
+{% comment %} Aqui van comentarios {% endcomment %}
+
+{% block titulo %} Inicio {% endblock %}
+
+{% block encabezado %} 
+
+	<h1><center> COATEPEC <p>&nbsp;</p> </center></h1>
+	<a href="http://edomex.gob.mx/"><img src="../static/img/logoedomex.png"  align= "left" width="200" height="200"></a>
+	<a href="http://edomexinforma.com/"><img src="../static/img/eldomexinfo.png"  align="right" width="200" height="100"></a>
+{% endblock %}
+{% block contenido %}
+  <p><CENTER>
+      <p>&nbsp;</p>
+	    <p>&nbsp;</p>
+	    <p>&nbsp;</p>
+	     <p>&nbsp;</p>
+	   
+	  	
+	  Actualmente tenemos registradas: 
+     {% with total=recetas.count %} 
+		{{total}} NOTICIAS{{total|pluralize}}
+	 {% endwith %}
+  </p></CENTER>
+  <CENTER>
+	<ul>		
+	  {% for dato in recetas %}
+	  <li class="{% cycle 'impar' 'par' %}">{{dato.titulo|title}}</li>
+	  {% empty %}
+	  <li> No hay noticias registradas aún </li>
+	  {% endfor %}
+	</ul></CENTER>
+	<P>
+	<p><em> 
+
+<p>Coatepec: “Cerro de las serpientes” o "La serpiente de cascabel blanca sobre el cerro pelado".
+ 
+<p>Sus fundadores fueron Totomihua Chichimeca, Aculhua y Acatonal 400 años antes de la llegada de los mexicas a la cuenca de México. El poblado se asentó donde ahora es el pueblo de San Juan Tlachichco, según antiguos, vieron una culebra grande y blanca enroscada sobre el cerro, una vez fundado el pueblo, la culebra desapareció y en su conmemoración se ordenó labrar una culebra en piedra semejante a la que se había visto.
+ 
+ 
+<p>Su lengua era chichimeca, a través de los años y con la llegada de los mexicas se sustituyó por la lengua otomí y náhuatl. Sus pobladores eran guerreros, eran aproximadamente 10,000 hombres. El linaje de los caciques de Coatepec desapareció con la conquista de Hernán Cortés.
+El asentamiento de Coatepec se localiza entre la sierra del Pino y la sierra Nevada. La fundación de Coatepec fue durante el Posclásico Medio, en el año 1164 d.C. y se debió a tres personajes chichimecas; Totomihua Chichimecatl, Acolhua y Acatonal, quienes encontraron encima de un cerro una gran culebra que después desapareció, en su honor le pusieron al lugar Coatepec, que significa “cerro de las culebras”.
+ 
+<p>El clima de la región es muy extremoso, abundan las lluvias, caía mucho granizo y las nevadas muy intensas. Se dedicaban a la caza de zorro, gato montés, venado, aves, liebres, culebras y conejos.
+ 
+<p>En el Posclásico Tardío, Coatepec es un centro regional de gran importancia dentro de la región del Acolhuacan, la población deja de ser chichimeca para adoptar un nuevo modo de vida, por lo que su población es considerada como Acolhua.
+
+<p>Tláloc, dios de la lluvia y de la Tierra
+<p>En la mitología mexica Tláloc tuvo como compañera a Chalchiutlique diosa de los mares, lagos, ríos. Deidades que residían en las cimas de las montaña, donde se le adoraba, rendía culto y se construían templo, se dice que existían cuatro recipientes de barro con agua de diferentes clases, solo una era benéfica para la cosecha, las otras pudrían, helaban y secaban.
+ 
+<p>Para producir la lluvia Tláloc se vale de sus ayudantes los tlaloques seres pequeños y deformes que proceden de los cuatro puntos cardinales cargan un palo y vasijas que llenan con agua para luego dejarla caer donde Tláloc les indica, con el palo rompen la vasija produciendo los truenos y rayos.
+ 
+<p>En la ritualidad mexica los sacerdotes se reunían en las montañas para ofrenda niños en sacrificio, comenzaban el primer mes Atlacahualo (febrero) continuando en el mes Huey-Tozontli que en nuestro calendario corresponderían al 10 y al 30de abril. La mansión de Tláloc era el Tlálocan donde siempre está verde, abundancia de frutos, flores y verduras que jamás se secan, solo van a ese paraíso los que morirán ahogados. Fulminados por un rayo, los gostosos, los hidrópicos, y principalmente los niños sacrificados.
+ 
+<p>Mediante el sincretismo mexicano las comunidades como Coatepec retoman estos rituales, ofreciendo flores, ceras, oraciones, cantos, procesiones que alaban al santo, ante todo se advierte aun el respeto y veneración al núcleo fundamental de la religión mexica Agua-tierra fertilidad, relación mágica e inmanente que refiere al dios Tláloc.
+
+<p>En México durante el siglo XVI los frailes franciscanos sustituyeron los dioses prehispánicos por santos cristianos, a san Isidro labrador le toco sustituir a la deidad de Tláloc dios de la lluvia, que para el Fraile Diego de Duran (1537-1588) Tláloc era el dios de los aguaceros, de los rayos, relámpagos y todo tipo de tempestades.
+
+<p>Doctrina
+<p>Coatepec se desarrolló como uno de los puntos más importantes de la evangelización cristiana del nuevo mundo, el monasterio franciscano procede del año 1527, fungió como cabecera de doctrina bajo la advocación de Natividad de Nuestra Señora. Durante los primeros años de la colonia se constituyó alrededor del convento la  Cofradía de Nuestra Señora del Rosario y su iglesia.
+ 
+<p>Museo
+<p>El pueblo de Coatepec cuenta con un museo en donde se exhiben algunos vestigios, restos de huesos de mamut y algunas piezas de alfarería de las culturas teotihuacana, tolteca, chichimeca, así como una colección de malacates, metates, temetates, molcajetes y metlapiles de factura prehispánica e incluso, un aro de juego de pelota mesoamericana.
+ 
+<p>Colecciones de instrumentos típicos de la explotación pulquera (acocotes, jícaras, raspadores, barricas y pichorras o tapones barrileros), baúles y cofres de fabricación colonial, así como arados egipcios, yugos, frustes y otras herramientas traídas por los españoles.
+ 
+<p>Entrarás una colección de cazuelas sacerdotales bordadas con oro y plata (siglo XVIII), varias pinturas al óleo del siglo XVI, mapas, sellos, tablas para jugar rayuela, armas (pistolas, machetes, cuchillos) y una colección fotográfica de finales del siglo XIX y principios del siglo XX con imágenes de calles, haciendas, etc.
+ 
+<p>Gastronomía y tradiciones
+<p>Pueblo inspirado en las tradiciones culinarias con la preparación de la exquisita barbacoa, la cual es elaborada artesanalmente en sus hornos de pozo con pencas de maguey, Su delicioso pulque, debida refrescante hasta para los paladares más exigentes; elaborado por los pobladores de la región, debida que ha ido evolucionando con el paso de los años, la podemos degustar en deliciosos sabores como mango, guayaba, elote, café, nuez, piñón, piña, fresa, entre otros.
+ 
+<p>Una de las tradiciones más importantes son la veneración A la virgen del Rosario, fiesta que se celebra el 7 de octubre acompañada con bandas de música, bailables folklóricos, pasando por sus hermosas calles adornadas con tapetes de aserrín.
+ 
+<p>Pueblo Nuevo
+<p>La rusticidad y el encanto del campo, con sus jacales, enormes rocas en las inmediaciones del asentamiento de altos árboles y plantaciones de magueyes hacen especial la vista a este lugar cercano a las montañas. A este poblado se accede por Coatepec, el silencio y la bruma hacen de Pueblo Nuevo un lugar apartado para caminatas y paseo en familia.
+ 
+<p>Coatepec en la actualidad
+<p>La fiesta de San Isidro en un principio respondió a la preocupación de los ascendientes españoles, de la colonia, en su afán de mantener comprometido al trabajador, agrícola y evitar la migración a otros lugares donde posiblemente encontraría mejores oportunidades. Hoy en día, un nuevo sentido de identidad local es apropiado por la comunidad de Coatepec creando lazos sociales, colectividad, resistencia, revaloración simbólica y unidad.
+ 
+<p>Al paso del tiempo, el festejo ha mostrado cambios, la presencia de la yunta de animales en la bendición es sustituida por la maquinaria agrícola como los tractores, camionetas, pero la esencia de la devoción aun persiste siendo el agua elemento vital para la productividad del ciclo agrícola.
+
+<p>¿Cómo llegar a Coatepec?
+<p>A Coatepec se llega a través de la carretera federal México-Puebla, pasando Ixtapaluca, se da vuelta a la izquierda en la desviación a San Francisco Acuautla, el siguiente pueblo es Coatepec.
+		
+
+	</em>/p>
+
+		<img src=../static/img/coatepec.png wisth= 200 height=180 border=0>
+
+        <center><table border="2px" >
+            <caption><p><center><span style="font-size:25px;"><strong>LOS CAMPEONES SON:</strong></span></center></p></caption>
+            <tr>
+            	<td><div> 1 </div>
+            		<div> 2 </div>
+            		<div> 3 </div>
+            		<div> 4 </div>
+            		<div> 5 </div>
+            		<div> 6 </div>
+            		<div> 7 </div>
+            		<div> 8 </div>
+            		<div> 9 </div>
+            		<div> 10 </div>
+            		<div> 11 </div>
+            		<div> 12 </div>
+            			
+            	</td>
+                <td colspan="2"><div><a href="http://www.conmebol.com/es/copa-america-2015/historia"> 1916/17 Uruguay</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1919 Brasil</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1920 Uruguay</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1921 Argentina</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1922 Brasil</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1923/24 Uruguay</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1925 Argentina</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1926 Uruguay</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1927/29 Argentina</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1935 Uruguay</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1937 Argentina</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1939 Perú</a></div>
+
+            	<td><div> 13 </div>
+            		<div> 14 </div>
+            		<div> 15 </div>
+            		<div> 16 </div>
+            		<div> 17 </div>
+            		<div> 18 </div>
+            		<div> 19 </div>
+            		<div> 20 </div>
+            		<div> 21 </div>
+            		<div> 22 </div>
+            		<div> 23 </div>
+            		<div> 24 </div>
+            			
+            	</td>
+</td>
+                <td><div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1941 Argentina</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1942 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1945/46/47 Argentina</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1949 Brasil</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1953 Paraguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1955 Argentina</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1956 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1957/59 Argentina</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1963 Bolivia</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1967 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1975 Perú</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1979 Paraguay</a></div>
+				<td><div> 25 </div>
+            		<div> 26 </div>
+            		<div> 27 </div>
+            		<div> 28 </div>
+            		<div> 29 </div>
+            		<div> 30 </div>
+            		<div> 31 </div>
+            		<div> 32 </div>
+            		<div> 33 </div>
+            		<div> 34 </div>
+            		<div> 35 </div>
+            		<div> 36 </div>
+            			
+            	</td>
+</td>
+                <td><div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1983/87 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1989 Brasil</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1991/93 Argentina</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1995 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1997 Brasil</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1999 Brasil</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">2001 Colombia</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">2004/07 Brasil</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">2011 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">2015 Chile</a></div>
+					<div><a href="http://www.conmebol.com/copa-america-centenario">?</a></div>
+					<div><a>     .</a></div>
+					</div>
+</td>
+            </tr>
+         
+        </table></center>
+
+
+  
+
+{% endblock %}

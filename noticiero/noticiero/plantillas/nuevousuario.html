@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block titulo %}Nuevo usuario{% endblock %}
+{% block encabezado %} 
+	 <h1><center>REGISTRAR UN NUEVO USUARIO <p>&nbsp;</p> </center></h1>
+	<a href="http://edomex.gob.mx/"><img src="../static/img/logoedomex.png"  align= "left" width="200" height="200"></a>
+	<a href="http://edomexinforma.com/"><img src="../static/img/eldomexinfo.png"  align="right" width="200" height="100"></a>
+{% endblock %}
+{% block contenido %}
+	<form id='formulario' method='post' action=''>{% csrf_token %}
+		<table>{{formulario}}</table>
+		<p><input type='submit' value='Registrar'/></p>
+	</form>
+{% endblock %}

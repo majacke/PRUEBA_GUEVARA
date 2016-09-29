@@ -1,0 +1,177 @@
+{% extends 'base.html' %}
+
+{% comment %} Aqui van comentarios {% endcomment %}
+
+{% block titulo %} Inicio {% endblock %}
+
+{% block encabezado %} 
+
+	<h1><center>ACUAUTLA  <p>&nbsp;</p> </center></h1>
+	<a href="http://edomex.gob.mx/"><img src="../static/img/logoedomex.png"  align= "left" width="200" height="200"></a>
+	<a href="http://edomexinforma.com/"><img src="../static/img/eldomexinfo.png"  align="right" width="200" height="100"></a>
+{% endblock %}
+{% block contenido %}
+  <p><CENTER>
+      <p>&nbsp;</p>
+	    <p>&nbsp;</p>
+	    <p>&nbsp;</p>
+	     <p>&nbsp;</p>
+	   
+	  	
+	  Actualmente tenemos registradas: 
+     {% with total=recetas.count %} 
+		{{total}} NOTICIAS{{total|pluralize}}
+	 {% endwith %}
+  </p></CENTER>
+  <CENTER>
+	<ul>		
+	  {% for dato in recetas %}
+	  <li class="{% cycle 'impar' 'par' %}">{{dato.titulo|title}}</li>
+	  {% empty %}
+	  <li> No hay noticias registradas aún </li>
+	  {% endfor %}
+	</ul></CENTER>
+	<P>
+	<p><em> 
+
+<p>Acuautla: "Bosque en el agua o junto al agua".
+
+<p>San Francisco Acuautla es reconocido por su lucha en defensa de sus tierras. Desde 1849 el pueblo luchó ante la corte por su revisión y restitución de sus tierras, una lucha de casi 28 años. Este pueblo adquirió cierta importancia cuando se construyó su iglesia en el siglo XVII.
+ 
+<p>La población de Acuatla es mencionada por primera vez como cabecera menor de Coatepec en el siglo XVII. La escasa información dice “En Coatepec, un solo linaje tlatoani gobernó cuatro “cabeceras” menores Acuauhtla, Tetitlan, Quitlapana y Tepetlapa. En 1580 aparece Coatepec como “cabecera de doctrina” y Acuautla y Xocoatlaco como “sujetos”.
+ 
+<p>El pueblo de Acuautla debió haber adquirido cierta importancia, pues ahí se construyó su iglesia a finales del siglo XVIII. Una revisión de mapas antiguos ofrece  la certidumbre de que Acuautla aparece por primera vez en los mapas a principios del siglo XIX (1807).
+No se sabe si existía en la época prehispánica, por que los relevantes papeles del códice Xólotl, en los cuales se menciona insistentemente a otras tres poblaciones vecinas, es decir a Coatepec, Coatlinchán y Huexotla, en época de Nezahualcóyotl, no mencionan a Acuautla. No obstante esta zona ocupada por los acolhuas, estuvo fuertemente poblada y no sería extraño que Acuautla fuera uno de los muchos asentamientos que había.
+ 
+<p>Hacienda de San Francisco Acuautla se formó como consecuencia del crecimiento de la gran propiedad de Chalo desde 1770 y 1870. Dotada con una extensión de 50 caballeros, es decir 2,139 hectáreas, su vocación fue la producción de maíz, trigo, cebada y frijol, contaba con un hato ganadero de 140 vacas, 1200 cabras y 63 borregos, además de producir 300 barriles de pulque a finales del siglo XIX. En 1915 antes de ser afectada por el reparto agrario aun contaba con 1800 hectáreas.
+ 
+<p>Hacienda de San Francisco Acuautla
+<p>La hacienda de San Francisco Acuautla se formó como consecuencia de la gran propiedad de Chalco desde 1770 a 1870. Dotada con una extensión de 50 caballerías, es decir 2,139 hectáreas, su vocación fue la producción de maíz, trigo, cebada y frijol. Contaba con un hato ganadero de 140 vacas, 1200 cabras y 63 borregos, además de producir 300 barriles de pulque a finales del siglo XIX. En 1915 antes de ser afectada por el reparto agrario aún contaba con 1800 hectáreas.
+ 
+<p>Ex hacienda de Jesús María
+<p>En este lugar aún se cuentan las leyendas de apariciones que por las noches cruzan los corredores, patios y muchas leyendas más que siguen rumorando. A finales del siglo XIX, las tierras de la hacienda eran cultivadas con maíz y cebada, en su fértil suelo pastaban tranquilamente una gran manada de borregos, vacas y caballos.
+ 
+<p>La lucha del pueblo por la tierra
+<p>Al pueblo de San Francisco Acuautla se le conoce a nivel nacional por su tradición de lucha por la defensa de sus tierras. 
+ 
+<p>De hecho antes de la conocida rebelión indígena de Julio López, el pueblo de Atlautla desde 1849 lucharon ante la corte o la revisión de sus linderos y la restitución de sus tierras. Una lucha legal de 28 años, exacerbada cuando las haciendas empezaron a modernizar sus instalaciones. Sobre todo después de que la hacienda de Zoquiapan construyó Los Depósitos, un enorme sistema de riego que capturaba las aguas de los montes de Rio Frio. Legalmente los indígenas de la región tuvieron un fuerte retroceso con la expedición de la Ley Lerdo, la cual desamortizaba los bienes comunales. Los hacendados acrecentaron sus propiedades amparados en esa ley.
+ 
+<p>Acuautla cuna de Julio López
+<p>El personaje que convirtió a San Francisco Acuautla en un lugar importante de la historia de nuestro país fue Julio López, nacido en ese pueblo. López es uno de los personajes más misteriosos e interesantes de la historia de México. Este notable coronel protagonizó la más importante rebelión indígena del siglo XIX. Inmediatamente después del triunfo liberal ante la intervención francesa, sobreviene este movimiento campesino autonombrado socialista, opuesto por las armas a la ley Lerdo. La rebelión ocurrida entre 1867 y 1868 se extendió por todo el Distrito Chalco y fue perseguida por el gobierno federal de Benito Juárez.
+ 
+<p>La rebelión indígena de Julio López ha sido señalada por muchos historiadores como el antecedente de la lucha de Emiliano Zapata por la tierra. El gobierno liberal de Juárez ultimó al movimiento campesino y mandó a ejecutar al guerrillero. Julio López fue discípulo de Plotinio Rhodakanaty, un influyente profesor que popularizó en México al socialismo utópico de Fourier, las sociedades secretas de Bakunin y el anarquismo de Proudhon y cuyos discípulos fueron los creadores del primer movimientos sindical en México.
+ 
+<p>La vocación económica de San Francisco Acuautla
+<p>San Francisco Acuautla ha tenido una vocación agrícola y en los últimos 30 años, transporte, comercio y la explotación de sus cuantiosos bancos de arena caracterizan su movimiento comercial.
+ 
+<p>El santuario de Texcalhuey
+<p>En el transcurso del año 1948 un gran suceso aconteció, El poblado se estremeció en la montaña el día 2 de febrero, ya que un campesino llamado Francisco gritó ¡Milagro en el cerro de Texcalhuey, hay una virgen! De esa manera llegaron un sinfín de feligreses, algunos incrédulos y otros con mucha fé apreciaron la imagen de la Virgen de Guadalupe en un monolito, roca pura. Con el paso de los años se ha convertido en un estable espacio de culto religioso. La Fiesta grande en honor de la virgen de Guadalupe congrega una multitud de peregrinos los días 12 de diciembre de cada año. Este lugar de peregrinación ubicado en el Ejido de San Francisco Acuautla, donde se apareció la Virgen a un sencillo niño tlacualero llamado Francisco Catillo Amaya y la imagen que admirablemente quedó impresa en la peña.
+ 
+<p>Petroglifo
+<p>Es una enorme roca cubierta de signos, cuyo significado permanece en el misterio esperando una interpretación y respuesta, en cierta forma el misterio que rodea todas las preguntas que nos hacemos. No obstante su significado es astronómico, relacionado con Tláloc, en su aspecto de navegante de los cielos.
+ 
+<p>Barbacoa y pulque.
+<p>San Francisco es famoso en la región por sus numerosos restaurantes donde se puede degustar excelente barbacoa, escanciado con un buen vaso de pulque, sea natural o los ricos curados de fresa, apio, avena, y muchos más. Lugares como El Güero, Los Pirules, Los Pepes, Don Enrique, El Guajolote y El Jacalito atraen a muchos comensales sobre todo los fines de semana.
+ 
+<p>¿Cómo llegar a San Francisco Acuautla?
+Sea que procedan de la Ciudad de México por la Autopista o por la carretera federal México-Puebla, después de cruzar Ixtapaluca rumbo a Río frío, a unos dos kilómetros hay una desviación a la izquierda, esa es la Avenida San Francisco que conduce directamente a San Francisco Acuautla.
+		
+
+	</em>/p>
+
+		<img src=../static/img/acuautla.png wisth= 200 height=180 border=0>
+
+        <center><table border="2px" >
+            <caption><p><center><span style="font-size:25px;"><strong>LOS CAMPEONES SON:</strong></span></center></p></caption>
+            <tr>
+            	<td><div> 1 </div>
+            		<div> 2 </div>
+            		<div> 3 </div>
+            		<div> 4 </div>
+            		<div> 5 </div>
+            		<div> 6 </div>
+            		<div> 7 </div>
+            		<div> 8 </div>
+            		<div> 9 </div>
+            		<div> 10 </div>
+            		<div> 11 </div>
+            		<div> 12 </div>
+            			
+            	</td>
+                <td colspan="2"><div><a href="http://www.conmebol.com/es/copa-america-2015/historia"> 1916/17 Uruguay</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1919 Brasil</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1920 Uruguay</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1921 Argentina</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1922 Brasil</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1923/24 Uruguay</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1925 Argentina</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1926 Uruguay</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1927/29 Argentina</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1935 Uruguay</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1937 Argentina</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1939 Perú</a></div>
+
+            	<td><div> 13 </div>
+            		<div> 14 </div>
+            		<div> 15 </div>
+            		<div> 16 </div>
+            		<div> 17 </div>
+            		<div> 18 </div>
+            		<div> 19 </div>
+            		<div> 20 </div>
+            		<div> 21 </div>
+            		<div> 22 </div>
+            		<div> 23 </div>
+            		<div> 24 </div>
+            			
+            	</td>
+</td>
+                <td><div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1941 Argentina</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1942 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1945/46/47 Argentina</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1949 Brasil</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1953 Paraguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1955 Argentina</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1956 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1957/59 Argentina</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1963 Bolivia</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1967 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1975 Perú</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1979 Paraguay</a></div>
+				<td><div> 25 </div>
+            		<div> 26 </div>
+            		<div> 27 </div>
+            		<div> 28 </div>
+            		<div> 29 </div>
+            		<div> 30 </div>
+            		<div> 31 </div>
+            		<div> 32 </div>
+            		<div> 33 </div>
+            		<div> 34 </div>
+            		<div> 35 </div>
+            		<div> 36 </div>
+            			
+            	</td>
+</td>
+                <td><div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1983/87 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1989 Brasil</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1991/93 Argentina</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1995 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1997 Brasil</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1999 Brasil</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">2001 Colombia</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">2004/07 Brasil</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">2011 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">2015 Chile</a></div>
+					<div><a href="http://www.conmebol.com/copa-america-centenario">?</a></div>
+					<div><a>     .</a></div>
+					</div>
+</td>
+            </tr>
+         
+        </table></center>
+
+
+  
+
+{% endblock %}

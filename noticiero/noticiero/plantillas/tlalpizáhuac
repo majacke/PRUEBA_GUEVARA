@@ -1,0 +1,186 @@
+{% extends 'base.html' %}
+
+{% comment %} Aqui van comentarios {% endcomment %}
+
+{% block titulo %} Inicio {% endblock %}
+
+{% block encabezado %} 
+
+	<h1><center>tlapacoya  <p>&nbsp;</p> </center></h1>
+	<a href="http://edomex.gob.mx/"><img src="../static/img/logoedomex.png"  align= "left" width="200" height="200"></a>
+	<a href="http://edomexinforma.com/"><img src="../static/img/eldomexinfo.png"  align="right" width="200" height="100"></a>
+{% endblock %}
+{% block contenido %}
+  <p><CENTER>
+      <p>&nbsp;</p>
+	    <p>&nbsp;</p>
+	    <p>&nbsp;</p>
+	     <p>&nbsp;</p>
+	   
+	  	
+	  Actualmente tenemos registradas: 
+     {% with total=recetas.count %} 
+		{{total}} NOTICIAS{{total|pluralize}}
+	 {% endwith %}
+  </p></CENTER>
+  <CENTER>
+	<ul>		
+	  {% for dato in recetas %}
+	  <li class="{% cycle 'impar' 'par' %}">{{dato.titulo|title}}</li>
+	  {% empty %}
+	  <li> No hay noticias registradas aún </li>
+	  {% endfor %}
+	</ul></CENTER>
+	<P>
+	<p><em> Tlalpizáhuac: El lugar donde se tañen las cañas o lugar donde se angosta.
+ 
+Ubicado en la ladera sur del Cerro El Pino, próximo a la extinta ribera del Lago de Chalco, se llega a este lugar por la Carretera Federal México-Puebla (km 23.9). Fue descubierto apenas en 1987 al realizar trabajos de urbanización, encontrándose vasijas, huesos, muros y pisos.
+ 
+Figuran aquí 17 plataformas sobre las cuales se construyeron altares y cuartos con usos habitacional y ritual, entre ellos, el temazcal, que mostraba en la parte superior de su acceso restos de pintura mural.
+El sitio arqueológico se localiza en la ladera sur del cerro “El Pino”, muy próximo a lo que debió ser la ribera del lago de Chalco. Se encuentra a la salida de la población de Tlalpizáhuac en el municipio de Ixtaplauca, Estado de México, km 23.900 de la carretera México-Puebla, descubierto en el año de 1987, cuando se llevaban a cabo trabajos de urbanización sobre la superficie del predio conocido como San José Chalco. Al despalmar el terreno, excavar zanjas de drenaje, etc., fueron apareciendo distintos elementos como vasijas, huesos, muros y pisos.
+Tiene una máxima extensión máxima de aproximadamente veinte Has, aunque sólo tres de ellas tienen restos de arquitectura, distribuidos principalmente en la parte baja de la falda del cerro, entre las cotas  2242 a 2270 msnm, el sitio sigue el contorno del cerro a lo largo de 350 m.
+ 
+Historia
+El poblado de Tlalpizáhuac es mencionado en las fuentes históricas del siglo XVI y XVII como Tlalpizahuayan, que significa “el  lugar donde se tañen las cañas” o también  “lugar donde se angosta”.
+ 
+Los documentos hacen referencia al poblado de los siglos XIII al XVI, es importante señalar que el sitio arqueológico de Tlalpizáhuac  no corresponde con el Tlalpizahuayan histórico, ya que la presencia de cerámica azteca, que corresponde a ese periodo es prácticamente inexistente en San José Chalco. Chimalpahin, cronista de principios del siglo XVII para el región de Chalco-Amaquemecan, al cual perteneció Tlalpizahuayan, hace referencia a diversos grupos que habitaron esta área entre los años 700 a 1300 d.C. hacia el año 900 d.C. la región es conquistada por los Olmecas Uixtotin, Xicalancas, Xochtecas Quiyahuiztecas y Cocolcas, Finalmente arriban grupos Chichimecas y Nonohualcas, los cuales dominaron todo el rumbo al cual rebautizaron con el nombre de Chalco-Amaquemecan.
+ 
+Arqueología
+Tlalpizáhuac surgió y floreció durante los horizontes denominados Epiclásico (700-900 d.C.) y Postclásico Temprano (900-1200 d.C.) Con la caída de Teotihuacan se descompone el sistema político prevaleciente en ese momento, la época siguiente (Epiclásico) se caracteriza por un fenómeno de reacomodo en que los nuevos focos de poder desplazan hacia regiones de la Cuenca de México. Entre  estos sitios se pueden mencionar para la región a Xico, Cerro Portezuelo y Cerro de la Estrella. El estudio de cerámica de Tlalpizáhuac nos indica que el asentamiento fue ocupado primeramente por gente que utilizó la cerámica conocida como Coyotlatelco (650-700 d.C.). Hacia el siglo X aparecen las cerámicas de Mazapa y otra conocida como joroba naranja sobre crema. La última fase de ocupación (1000-1250 d.C.) trae consigo una cerámica de pasta fina y de color anaranjado o café claro, vasijas provenientes principalmente de las ofrendas de los entierros, identificadas con una filiación Tolteca.
+ 
+En el sitio encontramos diferentes tipos de construcciones adaptadas a la topografía del terreno. El pie de monte está ocupado principalmente por unidades habitacionales construidas directamente sobre la superficie del terreno o sobre plataformas, estas unidades están conformadas por varios cuartos organizados alrededor de un patio central. Se detectaron 17 plataformas, 12 de ellas alrededor de una pequeña plaza formando el área nuclear del sitio, las otras cinco están en los sitios extremos este y oeste. Los elementos arquitectónicos básico del sitio son las plataformas ya que la gran mayoría de las demás construcciones (cuartos, altares, fogones, etc.) se encuentran edificadas sobre ellas. Una de las construcciones que sobresale es el temazcal o baño de vapor. 
+ 
+En Tlalpizáhuac se exploraron más de 50 entierros, detectándose tres formas de patrón de enterramiento. La primera forma la constituyen cuerpos enteros o incompletos acompañados de ofrendas. La segunda forma son cuerpos completos pero desmembrados, los cuales se encontraron sobre los pisos de estuco o al pie de las plataformas, no son entierros en el sentido estricto de la palabra, sino mas bien fueron encontrados en el lugar y la posición al haber sido muertos o arrojados poco tiempo después de que esto sucediera. El tercer tipo se trata de personajes importantes, acompañados por varios individuos, envueltos en algún tipo de textil (fardos funerarios), estos entierros resultaron ser los más ricos en ofrendas, constituidas principalmente por objetos foráneos; de la costa del Golfo de México con fuerte influencia maya, cerámica mixtecoide y vasijas cuyo origen probablemente sea el occidente de México y de la Huasteca.
+ 
+Lo artefactos encontrados durante las excavaciones atestiguan el alto nivel tecnológico alcanzado por los habitantes del lugar por los habitantes del ligar. Su tecnología estaba orientada al máximo aprovechamiento de los recursos naturales y a la adecuación del lugar que habitaban, emplearon la piedra, el barro, el hueso, la concha, el cobre, la jadeíta, la obsidiana, la pizarra entre otros materiales.
+ 
+Entre los instrumentos utilizados por los antiguos habitantes de Tlalpizáhuac se pueden mencionar los pulidores para estuco, hachas de piedra, cuchillos y navajas de obsidiana, agujas y punzones de hueso por mencionar algunos.
+ 
+Vaso de Tlalpizáhuac
+Una de las piezas más relevantes que se han encontrado en el sitio es este vaso cilíndrico con soporte de pedestal, elaborado en una cerámica que imita al tipo llamado “anaranjado fino”. Su decoración consiste en una escena al bajo relieve, plasmada mediante un molde. Dicha escena se divide en tres secciones o bandas. La banda superior está ocupada por dos elementos en forma de animales fantásticos, que representan a deidades celestes, el de la derecha parece ser un lagarto y el de la izquierda una serpiente. En la banda inferior se encuentran elementos semejantes pero aquí representando al inframundo, el de la izquierda vuelve a ser un lagarto y el de la derecha un jaguar con las fauces abiertas. La banda central o terrestre la ocupan dos personajes ricamente ataviados. Éstos son sacerdotes llevando a cabo una ceremonia de siembra auspiciada por Tláloc y Quetzalcóatl, dioses del agua y del viento respectivamente. Puede verse que el personaje de la derecha lleva una “coa” (bastón plantador), la cual se posa sobre un grano de maíz, realizando la acción de sembrar. El personaje de la izquierda mientras tanto vierte agua sobre la tierra donde se siembra el maíz.
+ 
+Son pocos los ejemplares, conocidos, de vasos con características similares a las del vaso de Tlalpizáhuac. Destacándose los dos encontrados en el Templo Mayor de la Ciudad de México, que se exhiben en el museo del mismo lugar. Dimensiones del vaso de Tlalpizáhuac: Altura 26.7 cm. Diámetro 16.2 cms.
+ 
+Encontrado en 1987, durante el rescate arqueológico de Tlalpizáhuac, Estado de México, el Vaso anaranjado fino, fechado alrededor del año 1050 de nuestra era y decorado con artísticos relieves, forma parte de la historia arqueológica de la entidad y da cuenta del avance cultural y artístico que tenían los antiguos mexicanos asentados en esta localidad mexiquense, es por ello que se exhibe como una de las piezas más importantes del acervo del Museo de Antropología e Historia, dependiente del Instituto Mexiquense de Cultura (IMC).
+ 
+El sitio de Tlalpizáhuac tuvo dos momentos de ocupación durante el Epiclásico y uno posterior.
+
+El epiclásico
+
+Es un periodo en el que hubo un reacomodo de la población en la Cuenca de México, en gran medida como consecuencia del vacío de poder por la caída de Teotihuacán.
+ 
+La arquitectura de Tlalpizáhuac tiene grandes semejanzas con la de Cacaxtla, esto sugiere un posible parentesco y/o contacto entre estas dos poblaciones.
+ 
+La base de la economía era sobre todo el cultivo de maíz, pero también se consumían otros productos como la calabaza, el frijol, amaranto y huauzontle. Frutos como tejocote, biznaga, garambullo y nopal. A través de la casería se obtenía el conejo, la tuza, ratón de campo y venado cola blanca; además del guajolote obtenido mediante un proceso de domesticación. El sitio fue temporalmente abandonado y en parte destruido, alrededor del 900 a.C.
+ 
+Postclásico
+El sitio arqueológico de Tlalpizáhuac vuelve a ser ocupado entre 900 y 1200 d.C Fue una zona habitacional de alto estatus, considerando la calidad del material y las formas constructivas, además de presentar una densidad de población considerable.
+ 
+Las construcciones anteriores fueron cubiertas por escombros, restos de cerámica y sedimentos de lago, que sirvieron como base para la edificación de nuevas plataformas, de mayor tamaño y altura. Las actividades que se dedicaron estos habitantes de manera cotidiana fueron la caza, la pesca, recolección, labores agrícolas, al tejido de redes o cestos, a la construcción y la manufacturación de cerámica entre otras más.
+ 
+Tlalpizáhuac sostuvo relaciones culturales y de intercambio con el Occidente de México, la Huasteca, la región central de la costa del golfo, Oaxaca y el valle de Puebla-Tlaxcala, pero sobre todo con Tula y la cuenca de México. El abandono del sitio se da aproximadamente en el 1200 d.C. es posible que la causa haya sido por la llegada de nuevos grupos que arribaron a la región.
+		
+
+
+
+
+
+
+
+	</em>/p>
+
+        <center><table border="2px" >
+            <caption><p><center><span style="font-size:25px;"><strong>LOS CAMPEONES SON:</strong></span></center></p></caption>
+            <tr>
+            	<td><div> 1 </div>
+            		<div> 2 </div>
+            		<div> 3 </div>
+            		<div> 4 </div>
+            		<div> 5 </div>
+            		<div> 6 </div>
+            		<div> 7 </div>
+            		<div> 8 </div>
+            		<div> 9 </div>
+            		<div> 10 </div>
+            		<div> 11 </div>
+            		<div> 12 </div>
+            			
+            	</td>
+                <td colspan="2"><div><a href="http://www.conmebol.com/es/copa-america-2015/historia"> 1916/17 Uruguay</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1919 Brasil</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1920 Uruguay</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1921 Argentina</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1922 Brasil</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1923/24 Uruguay</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1925 Argentina</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1926 Uruguay</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1927/29 Argentina</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1935 Uruguay</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1937 Argentina</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1939 Perú</a></div>
+
+            	<td><div> 13 </div>
+            		<div> 14 </div>
+            		<div> 15 </div>
+            		<div> 16 </div>
+            		<div> 17 </div>
+            		<div> 18 </div>
+            		<div> 19 </div>
+            		<div> 20 </div>
+            		<div> 21 </div>
+            		<div> 22 </div>
+            		<div> 23 </div>
+            		<div> 24 </div>
+            			
+            	</td>
+</td>
+                <td><div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1941 Argentina</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1942 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1945/46/47 Argentina</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1949 Brasil</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1953 Paraguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1955 Argentina</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1956 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1957/59 Argentina</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1963 Bolivia</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1967 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1975 Perú</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1979 Paraguay</a></div>
+				<td><div> 25 </div>
+            		<div> 26 </div>
+            		<div> 27 </div>
+            		<div> 28 </div>
+            		<div> 29 </div>
+            		<div> 30 </div>
+            		<div> 31 </div>
+            		<div> 32 </div>
+            		<div> 33 </div>
+            		<div> 34 </div>
+            		<div> 35 </div>
+            		<div> 36 </div>
+            			
+            	</td>
+</td>
+                <td><div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1983/87 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1989 Brasil</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1991/93 Argentina</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1995 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1997 Brasil</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1999 Brasil</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">2001 Colombia</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">2004/07 Brasil</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">2011 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">2015 Chile</a></div>
+					<div><a href="http://www.conmebol.com/copa-america-centenario">?</a></div>
+					<div><a>     .</a></div>
+					</div>
+</td>
+            </tr>
+         
+        </table></center>
+
+
+  
+
+
+{% endblock %}

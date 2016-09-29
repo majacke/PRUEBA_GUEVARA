@@ -1,0 +1,187 @@
+{% extends 'base.html' %}
+
+{% comment %} Aqui van comentarios {% endcomment %}
+
+{% block titulo %} Inicio {% endblock %}
+
+{% block encabezado %} 
+
+	<h1><center> AYOTLA <p>&nbsp;</p> </center></h1>
+	<a href="http://edomex.gob.mx/"><img src="../static/img/logoedomex.png"  align= "left" width="200" height="200"></a>
+	<a href="http://edomexinforma.com/"><img src="../static/img/eldomexinfo.png"  align="right" width="200" height="100"></a>
+{% endblock %}
+{% block contenido %}
+  <p><CENTER>
+      <p>&nbsp;</p>
+	    <p>&nbsp;</p>
+	    <p>&nbsp;</p>
+	     <p>&nbsp;</p>
+	   
+	  	
+	  Actualmente tenemos registradas: 
+     {% with total=recetas.count %} 
+		{{total}} NOTICIAS{{total|pluralize}}
+	 {% endwith %}
+  </p></CENTER>
+  <CENTER>
+	<ul>		
+	  {% for dato in recetas %}
+	  <li class="{% cycle 'impar' 'par' %}">{{dato.titulo|title}}</li>
+	  {% empty %}
+	  <li> No hay noticias registradas aún </li>
+	  {% endfor %}
+	</ul></CENTER>
+	<P>
+	<p><em> 
+
+<p>Ayotla: “Lugar donde abundan las tortugas”.
+
+<p>Emergió como lugar importante desde los primeros tiempos del virreinato a causa de su ubicación estratégica al borde del camino real de México a Puebla.
+ 
+<p>Tiene interesantes lugares como:
+<p>Rancho Guadalupe
+<p>Capilla el Calvario
+<p>Ayotla Textil
+<p>El Fraccionamiento José de la Mora
+<p>Plaza Comercial El Patio Ayotla
+<p>celebración de la Virgen del Rosario
+<p>Emplazado sobre la orilla norte de la ciénaga de Chalco era un paso obligado para los viajeros que hacia el camino a Puebla de los Ángeles o que venían procedentes de Veracruz. Aparte de la vena del Rey, muy pronto la orden de los dominicos estableció hacia 1696 una iglesia que primero se conocía como iglesia de Santa María Magdalena, posteriormente celebraron como santo patrón a San Judas Tadeo, pero hacia 1880, un suceso inesperado cambio la advocación religiosa de la iglesia en forma definitiva. Como narran los vecinos actuales, hace 128 años llegó a Ayotla milagrosamente la imagen de la Virgen del Rosario procedente del estado de Puebla. A partir de entonces se consideró a la Virgen del Rosario como la Santa Patrona de Ayotla.
+ 
+<p>La llegada milagrosa de la Virgen del Rosario
+<p>La tradición oral de la gente de Ayotla suele contar que la escultura de la santa patrona procede de El Verde, Puebla. Devotos de la virgen de aquel lugar trasladaban la sagrada imagen a la Ciudad de México con la idea de que manos expertas la restauraran, pues tenía la nariz rota. En esas andanzas llego la comitiva a Ayotla con la virgen en andas. Luego de descansar y querer seguir camino, por más que quisieron trasladar a la virgen, cuando hacía los preparativos para partir, empezaba a llover torrencialmente y había imposibilidad de moverla. Así estuvieron un tiempo hasta que la fueron a destapar y para su sorpresa la imagen ya estaba perfectamente restaurada. La milagrosa reparación ocurrida a la imagen de la virgen, fue considerada por quienes la trasladaban como un acto de voluntad de la Virgen del Rosario, quien de esta manera manifestaba su deseo de pertenecer en Ayotla. Ante una señal tan clara, a partir de ahí los parroquianos de Ayotla reconocieron a la Virgen del Rosario como su santa patrona.
+ 
+<p>La celebración de la Virgen
+<p>La fiesta grande en honor de la Virgen del Rosario se celebra anualmente el 7 de octubre. Actualmente el festejo reúne a comparsas de chínelos, banda de viento, tapete de aserrín en el atrio, callejoneada con estudiantinas y coros, feria y desde luego las actividades litúrgicas dentro de la iglesia, misas, bautizos y confirmaciones.
+ 
+<p>Cambios en la vocación económica
+<p>La vocación original de la economía de Ayotla era de servicios a los viajeros de las diligencias, de antigua tradición magueyera y pulquera en la loma y de chinampas y uso del lago en su agricultura, caza y pesca.  La vocación del comercio del pulque cambio a principios de los años veinte con la introducción de reses finas y Ayotla participó activamente en la bonanza de la Cuenca lechera de Chalco. La ganadería decayó desde los años sesenta del siglo XX cuando se encareció el agua y las primeras fábricas compitieron con los ranchos por la mano de obra y el agua.
+ 
+<p>Ayotla Textil
+<p>A finales de la década de los cincuenta llego la industria a Ayotla cuando el industrial José de la Mora estableció la fábrica Hilados y Tejidos conocida como Ayolta Textil, filial de Atoyac Textil. La empresa abrió sus puertas en 1948 y durante sus 32 años de vida significó un auge económico para Ayotla y la región.  Instalada con 500 telares automáticos y maquinaria moderna, la empresa empleó a la mano disponible en Ixtapaluca y Chalco.
+ 
+<p>Ayotla hoy
+<p>Ayotla puede visitarse cualquier día del año para disfrutas de la visita a la iglesia de la Virgen del Rosario, pero hay otros dos momentos del año especialmente gratos para llegar a Ayotla. En Semana Santa se celebra en el atrio y en la Capilla de Calvario la representación de la Pasión de Cristo. El otro momento es alrededor del 2 de noviembre, donde desde hace 29 años se realiza un recorrido fúnebre con banda de viento y desde hace tres lustros al señor  Jesús Gámez y su familia colocan un altar de muertos en el atrio y hacen una representación dramática del Mictlán. 
+ 
+<p>El sitio es conocido como Izcalli-Ixtapaluca o Ayotla. Tiene una ocupación durante el formativo tardío y se trataba de un pequeño centro ceremonial que fue cobrando importancia y esto se podía apreciar en la arquitectura y en los entierros.
+  
+<p>La población utilizó una gran diversidad de objetos de cerámica como: cajetes, cuencos, ollas, platos, comales, cucharones, jarras y vasijas miniatura. Entre los objetos de lítica están: lascas, navajas, puntas de proyectil, regaderas, raspadores, metates, morteros y pulidores.
+ 
+<p>El sitio arqueológico de Ayotla fue un pequeño centro ceremonial que fue re-ocupado durante el Posclásico Temprano. Tuvo cierta importancia, que se ve reflejada en su posición geográfica, en la calidad de sus entierros y arquitectura.
+ 
+<p>Parece que Ayotla estuvo relacionada con el sitio de Tlalpizáhuac, ya que guardaban similitudes en el tipo de arquitectura, temporalidad y además de la cercanía entre ambos sitios. Esto hablaría de la posibilidad de que Ayotla fuera un pequeño poblado bajo el control de Tlalpizáhuac.
+ 
+<p>Rancho Guadalupe
+<p>El rancho de cuya existencia se tiene noticia desde 1708, está ligado históricamente a Emiliano Zapata, por ser ahí donde fusilo a ocho prisioneros en 1914 cuando pasó por Ayotla acompañado de un tren con dirección a la Ciudad de México, donde iba a reunirse con Francisco Villa. El Rancho albergó a Álvaro Obregón, Plutarco Elías Calles y Diego Rivera, el Rancho de Guadalupe, el Rancho de Guadalupe, actualmente se renta para elegantes eventos como bodas y fiestas especiales.
+ 
+<p>Capilla el Calvario
+<p>Es un antiguo lugar de culto religioso católico, que fue construido por los dueños de la antigua hacienda de El Calvario que se encuentra situada en el Municipio de Ayotla, la capilla se emplaza sobre un alto terreno rocoso, desde cuya elevación se admira el panorama de la subcuenca Chalca y los volcanes Iztacihuatl y Popocatépetl.
+ 
+<p>Ayotla puede visitarse cualquier día del año, pero hay dos fechas especialmente gratas para llegar a Ayotla. En semana Santa se celebra en el atrio y en la capilla del Calvario la presentación de la Pasión de Cristo reuniendo a cientos de personas. La otra fecha importante es el día 2 de noviembre, donde desde hace 30 años se realiza un recorrido fúnebre con banda de viento y carnaval.
+ 
+<p>Plaza Comercial El Patio Ayotla
+<p>Es un centro comercial con una ubicación privilegiada, localizado a lo largo de la carretera federal México-Puebla, aproximadamente a 5 minutos de Ixtapaluca en el corazón de Ayotla.
+ 
+<p>En la plaza podrás encontrar área de comida, tiendas de ropa y más de cincuenta tiendas en las que podrás realizar tus compras.
+ 
+<p>¿Cómo llegar a Ayotla?
+<p>Se llega desde el Distrito Federal a través de la carretera federal México-Puebla, pasando por los Reyes la Paz, se sigue por Tlalpizahuac y el siguiente pueblo es Ayotla, es el segundo semáforo se da vuelta a la izquierda, ahí se ubica la plazuela y zona de sitio.
+
+	</em>/p>
+
+		<img src=../static/img/ayotla.png wisth= 200 height=180 border=0>
+
+        <center><table border="2px" >
+            <caption><p><center><span style="font-size:25px;"><strong>LOS CAMPEONES SON:</strong></span></center></p></caption>
+            <tr>
+            	<td><div> 1 </div>
+            		<div> 2 </div>
+            		<div> 3 </div>
+            		<div> 4 </div>
+            		<div> 5 </div>
+            		<div> 6 </div>
+            		<div> 7 </div>
+            		<div> 8 </div>
+            		<div> 9 </div>
+            		<div> 10 </div>
+            		<div> 11 </div>
+            		<div> 12 </div>
+            			
+            	</td>
+                <td colspan="2"><div><a href="http://www.conmebol.com/es/copa-america-2015/historia"> 1916/17 Uruguay</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1919 Brasil</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1920 Uruguay</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1921 Argentina</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1922 Brasil</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1923/24 Uruguay</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1925 Argentina</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1926 Uruguay</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1927/29 Argentina</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1935 Uruguay</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1937 Argentina</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1939 Perú</a></div>
+
+            	<td><div> 13 </div>
+            		<div> 14 </div>
+            		<div> 15 </div>
+            		<div> 16 </div>
+            		<div> 17 </div>
+            		<div> 18 </div>
+            		<div> 19 </div>
+            		<div> 20 </div>
+            		<div> 21 </div>
+            		<div> 22 </div>
+            		<div> 23 </div>
+            		<div> 24 </div>
+            			
+            	</td>
+</td>
+                <td><div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1941 Argentina</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1942 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1945/46/47 Argentina</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1949 Brasil</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1953 Paraguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1955 Argentina</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1956 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1957/59 Argentina</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1963 Bolivia</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1967 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1975 Perú</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1979 Paraguay</a></div>
+				<td><div> 25 </div>
+            		<div> 26 </div>
+            		<div> 27 </div>
+            		<div> 28 </div>
+            		<div> 29 </div>
+            		<div> 30 </div>
+            		<div> 31 </div>
+            		<div> 32 </div>
+            		<div> 33 </div>
+            		<div> 34 </div>
+            		<div> 35 </div>
+            		<div> 36 </div>
+            			
+            	</td>
+</td>
+                <td><div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1983/87 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1989 Brasil</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1991/93 Argentina</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1995 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1997 Brasil</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1999 Brasil</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">2001 Colombia</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">2004/07 Brasil</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">2011 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">2015 Chile</a></div>
+					<div><a href="http://www.conmebol.com/copa-america-centenario">?</a></div>
+					<div><a>     .</a></div>
+					</div>
+</td>
+            </tr>
+         
+        </table></center>
+
+
+  
+
+
+{% endblock %}

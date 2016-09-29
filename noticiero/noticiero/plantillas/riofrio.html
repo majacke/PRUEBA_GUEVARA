@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+
+{% comment %} Aqui van comentarios {% endcomment %}
+
+{% block titulo %} Inicio {% endblock %}
+
+{% block encabezado %} 
+
+	<h1><center>RÍO FRÍO <p>&nbsp;</p> </center></h1>
+	<a href="http://edomex.gob.mx/"><img src="../static/img/logoedomex.png"  align= "left" width="200" height="200"></a>
+	<a href="http://edomexinforma.com/"><img src="../static/img/eldomexinfo.png"  align="right" width="200" height="100"></a>
+{% endblock %}
+{% block contenido %}
+  <p><CENTER>
+      <p>&nbsp;</p>
+	    <p>&nbsp;</p>
+	    <p>&nbsp;</p>
+	     <p>&nbsp;</p>
+	   
+	  	
+	  Actualmente tenemos registradas: 
+     {% with total=recetas.count %} 
+		{{total}} NOTICIAS{{total|pluralize}}
+	 {% endwith %}
+  </p></CENTER>
+  <CENTER>
+	<ul>		
+	  {% for dato in recetas %}
+	  <li class="{% cycle 'impar' 'par' %}">{{dato.titulo|title}}</li>
+	  {% empty %}
+	  <li> No hay noticias registradas aún </li>
+	  {% endfor %}
+	</ul></CENTER>
+	<P>
+	<p><em> 
+
+<p>Río Frío; el nombre lo eligió el Lic. Benito Juárez en un viaje a Puebla, se detuvo en este lugar a lavarse las manos, como estaba muy fría el agua comentó que “debía llamarse Río Frío”, los habitantes le pusieron el nombre agregándole posteriormente el “de Juárez”, Río Frío de Juárez.
+
+<p>Río Frío, nombrado oficialmente como Río Frío de Juárez, es una población mexicana, localizada en el estado de México y en el municipio de Ixtapaluca, se localiza en el punto más elevado de la autopista que une a la Ciudad de México con Puebla de Zaragoza, siendo históricamente un paso entre estas dos ciudades.
+
+<p>Historia
+<p>La población de Río Frío tiene su origen y desarrollo en el establecimiento del camino que une a la Ciudad de México y a Puebla, y desde ésta continúa hasta el Puerto de Veracruz, por ello y principalmente durante la época de la colonia y los primeros años del México independiente no había otra vía para llegar desde el extranjero hacia la capital, en Río Frío se establecieron entonces servicios como alimentación y hospedaje para los viajeros, ya que muchas veces era necesario pernoctar en esta población.
+ 
+<p>Historias y leyendas de Río Frío, Ixtapaluca
+<p>Río Frío se ubica en la zona más elevada de la serranía que divide el Valle de México y el Valle de Puebla-Tlaxcala y rodeado por frondosos bosques de coníferas, además por el enorme número de viajeros y riquezas que eran transportados por el camino hizo propicio que en la zona, conocida como el monte de Río Frío, se establecieran bandas de asaltantes que robaban a los viajeros y a los conductos que transitaban por la zona, durante los primeros años de la Independencia de México el gobierno no tenía capacidad de cuidar la seguridad de los caminos y los asaltos en el rumbo de Río Frío se hicieron comunes, este hecho fue hecho famoso por la célebre novela Los bandidos de Río Frío, del escritor Manuel Payno, esta situación terminó con la llegada del gobierno de Porfirio Díaz, que mediante el cuerpo de Guardias Rurales y en buena medida con el uso de la fuerza restableció la seguridad de los caminos.
+ 
+<p>La importancia que tuvieron las haciendas en Ixtapaluca durante el Porfiriato se debió a la gran producción de maíz, frijol, haba, alfalfa, calabaza y maguey. En 1887, Iñigo Noriega, adquirió la hacienda de Río Frío. 
+ 
+<p>Toda la actividad y el desarrollo de Río Frío tiene como centro su localización, por lo que su desarrollo se ha dado a la par de la carretera México-Puebla, tras la construcción de la autopista de cuatro carriles su actividad económica disminuyó debido a que dejó de ser una parada obligada, pero posteriormente se construyeron accesos a la población desde la autopista y se ha convertido en una población de descanso y paseo dominical para los habitantes del Valle de México.
+ 
+<p>Actividad económica de Río Frío.
+<p>Además de estas actividades la población de Río Frío se dedica a la agricultura y la explotación de los bosques que la rodean, principalmente en la elaboración de carbón vegetal. Río Frió originalmente formaba parte del municipio de Tlalmanalco, sin embargo, según el Decreto No. 37 del Congreso del Estado de México con fecha del 30 de diciembre de 1958 fue segregado de ese municipio e incorporado al de Ixtapaluca, además en 1960 se le nombró oficialmente como Río Frío de Juárez.
+		
+
+	</em>/p>
+
+		<img src=../static/img/riofrio.png wisth= 200 height=180 border=0>
+
+        <center><table border="2px" >
+            <caption><p><center><span style="font-size:25px;"><strong>LOS CAMPEONES SON:</strong></span></center></p></caption>
+            <tr>
+            	<td><div> 1 </div>
+            		<div> 2 </div>
+            		<div> 3 </div>
+            		<div> 4 </div>
+            		<div> 5 </div>
+            		<div> 6 </div>
+            		<div> 7 </div>
+            		<div> 8 </div>
+            		<div> 9 </div>
+            		<div> 10 </div>
+            		<div> 11 </div>
+            		<div> 12 </div>
+            			
+            	</td>
+                <td colspan="2"><div><a href="http://www.conmebol.com/es/copa-america-2015/historia"> 1916/17 Uruguay</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1919 Brasil</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1920 Uruguay</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1921 Argentina</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1922 Brasil</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1923/24 Uruguay</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1925 Argentina</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1926 Uruguay</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1927/29 Argentina</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1935 Uruguay</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1937 Argentina</a></div>
+								<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1939 Perú</a></div>
+
+            	<td><div> 13 </div>
+            		<div> 14 </div>
+            		<div> 15 </div>
+            		<div> 16 </div>
+            		<div> 17 </div>
+            		<div> 18 </div>
+            		<div> 19 </div>
+            		<div> 20 </div>
+            		<div> 21 </div>
+            		<div> 22 </div>
+            		<div> 23 </div>
+            		<div> 24 </div>
+            			
+            	</td>
+</td>
+                <td><div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1941 Argentina</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1942 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1945/46/47 Argentina</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1949 Brasil</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1953 Paraguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1955 Argentina</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1956 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1957/59 Argentina</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1963 Bolivia</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1967 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1975 Perú</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1979 Paraguay</a></div>
+				<td><div> 25 </div>
+            		<div> 26 </div>
+            		<div> 27 </div>
+            		<div> 28 </div>
+            		<div> 29 </div>
+            		<div> 30 </div>
+            		<div> 31 </div>
+            		<div> 32 </div>
+            		<div> 33 </div>
+            		<div> 34 </div>
+            		<div> 35 </div>
+            		<div> 36 </div>
+            			
+            	</td>
+</td>
+                <td><div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1983/87 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1989 Brasil</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1991/93 Argentina</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1995 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1997 Brasil</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">1999 Brasil</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">2001 Colombia</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">2004/07 Brasil</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">2011 Uruguay</a></div>
+					<div><a href="http://www.conmebol.com/es/copa-america-2015/historia">2015 Chile</a></div>
+					<div><a href="http://www.conmebol.com/copa-america-centenario">?</a></div>
+					<div><a>     .</a></div>
+					</div>
+</td>
+            </tr>
+         
+        </table></center>
+
+
+  
+
+{% endblock %}
